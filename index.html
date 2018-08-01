@@ -13,8 +13,10 @@
 </head>
 
 <body>
-    <section class="intro-section">
-        <h1 class="name">Student Name</h1>
+    <section class="intro-section clearfix">
+        <header>
+            <h1>Student Name</h1>
+        </header>
         <nav>
             <ul class="main-nav">
                 <li><a href="#">HOME</a></li>
@@ -29,7 +31,7 @@
         front-end web development at Treehouse and I am excited to put all my skills to use!</p>
     </section>
 
-    <section class="content-section">
+    <section class="content-section clearfix">
         <div class="portfolio">
             <header>
                 <h2>PORTFOLIO</h2>
@@ -53,7 +55,7 @@
                     the best one.</p>
                 </div>
                 <div class="map">
-                    <img src="img/portfolio-4.png"  alt="stock image of a map">
+                    <img src="img/portfolio-4.png" alt="stock image of a map">
                     <h3>Map of Favorite Spots</h3>
                     <p>This project uses mapping apis to plot points for my favorite spots in the city for a
                     do-it-yourself walking tour.</p>
@@ -72,17 +74,27 @@
         </div>
     </section>
     <section class="contact-section">
-        <h2>CONTACT</h2>
-        <p>If you're interested in chatting or want more information about what I've been working on,
-            I'd love to hear from you!</p>
-        <p>Phone &emsp;<a class="phone" href="callto: +1(111) 555-1234">+1&nbsp;(111)&nbsp;555-1234</a></p>
-        <p>Email &emsp;<a class="email" href="mailto: email@yoursite.com">email@yoursite.com</a></p>
+        <header>
+            <h2>CONTACT</h2>
+        </header>
+            <p>If you're interested in chatting or want more information about what I've been working on,
+                I'd love to hear from you!</p>
+            <p>Phone &emsp;<a class="phone" href="callto: +1(111) 555-1234">+1&nbsp;(111)&nbsp;555-1234</a></p>
+            <p>Email &emsp;<a class="email" href="mailto: email@yoursite.com">email@yoursite.com</a></p>
         <hr>
     </section>
+
     <footer>
-        <div class="footer-wrap clearfix">
-            <span>Student Name</span>
+        <div class="footer-wrapper">
+            <span class="footer-name">Student Name</span>
             <a class="footer-link" href="#">BACK TO TOP</a>
+            <nav>
+                <ul class="bottom-nav">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
         </div>
     </footer>
 </body>

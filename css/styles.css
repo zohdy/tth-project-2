@@ -12,7 +12,7 @@ a {
 }
 
 h2 {
-    font-size: .9rem;
+    font-size: .9em;
     margin:0;
 }
 
@@ -22,6 +22,10 @@ h3 {
 
 p {
     font-weight: 300;
+}
+
+.bottom-nav {
+    display: none;
 }
 
 .clearfix::after {
@@ -37,33 +41,33 @@ p {
     text-align: center;
     padding-bottom: 40px;
     background: #fafafa;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-.name {
-    font-size: 1.5rem;
+.intro-section header {
+    font-size: .8em;
     font-weight: 800;
-    margin: 0 15px;
-    padding-bottom: 15px;
-    padding-top: 25px;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    word-wrap:break-word;
 }
 
 .main-nav {
     padding-left: 0;
-    margin: 0 15px;
+    margin: 0;
 }
 
 .main-nav li {
     font-weight: 700;
     background: #fff;
     list-style-type: none;
-    margin-top: .5em;
+    margin-top: 5px;
     padding: 10px 0;
 }
 .profile-picture-wrapper {
-    margin-top:50px;
-    margin-left:60px;
-    margin-right:60px;
-    margin-bottom:20px;
+    margin: 50px 45px 20px;
 }
 
 .profile-picture-wrapper img {
@@ -72,8 +76,7 @@ p {
 
 .profile-description {
     color: #7F7F7F;
-    margin: 0 15px;
-    line-height: 1.5rem;
+    line-height: 1.5em;
     font-weight: 300;
 }
 
@@ -81,14 +84,14 @@ p {
 
 .content-section {
     padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 
 .portfolio {
     text-align: center;
-    margin-left: 15px;
-    margin-right: 15px;
-    line-height: 1.5rem;
+    line-height: 1.5em;
 }
 
 .portfolio header {
@@ -152,19 +155,156 @@ footer {
     background: #fafafa;
 }
 
-.footer-wrap {
+.footer-wrapper {
     display: inline-block;
     width: 100%;
-    font-size: .85rem;
+    font-size: .85em;
     font-weight: 700;
-    margin-left: 15px;
+    padding-left: 15px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
 .footer-link {
     float: right;
-    margin-right: 30px;
+    padding-right: 15px;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 768px){
+
+    /* INTRO SECTION */
+
+    .intro-section {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .intro-section p {
+        font-size: 1.2em;
+    }
+
+    .intro-section header{
+        padding-top: 30px;
+        padding-bottom: 0;
+        font-size: .7em;
+    }
+
+    .main-nav li {
+        font-size: .9em;
+        display: inline-block;
+        background: #fafafa;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top:5px;
+    }
+
+    .profile-description {
+        float: left;
+        width: 60%;
+        text-align: left;
+    }
+
+    .profile-picture-wrapper {
+        float: right;
+        width: 35%;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 10px
+    }
+
+    .profile-description {
+        padding-top:0;
+        padding-right: 25px;
+        margin-top: 50px;
+    }
+
+    /* CONTENT SECTION */
+
+    .content-section {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .content-section p {
+        max-width: 260px;
+        margin:10px auto 20px auto;
+    }
+
+    .content-section h3 {
+        margin-top:10px;
+    }
+
+    .marketing, .travel, .gallery {
+        float:left;
+        width: 49%;
+        font-size: .9em;
+    }
+
+    .search, .map, .calculator {
+        float: right;
+        width: 49%;
+        font-size: .9em;
+    }
+
+    /* CONTACT / FOOTER SECTION */
+
+    footer {
+        font-size: .9em;
+    }
+
+    hr {
+        margin-top: 55px;
+    }
+
+    .footer-wrapper {
+        margin-top: 25px;
+        margin-bottom: 70px;
+    }
+
+    .footer-link {
+        display: none;
+    }
+
+    .contact-section {
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-top: 50px;
+    }
+
+    .contact-section header {
+        font-size: .9em;
+    }
+
+    .contact-section p{
+        font-size: 1.1em;
+    }
+    .contact-section p:nth-child(2) {
+        background: #fafafa;
+        max-width: 470px;
+        margin: 35px auto;
+        padding-top:0;
+    }
+
+    .footer-name {
+        float: left;
+        padding-left: 15px;
+    }
+
+    .bottom-nav {
+        float: right;
+        display: inline-block;
+        margin: 0;
+        padding-right: 30px;
+    }
+
+    .bottom-nav li {
+        display: inline-block;
+        margin-left: 25px;
+
+    }
+
+
 }
 
 
