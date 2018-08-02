@@ -18,6 +18,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: #b6b6b6;
+}
+
 h2 {
     font-size: .9em;
 }
@@ -135,11 +139,16 @@ li {
 .contact-section p:nth-child(2){
     padding-top: 20px;
     padding-bottom: 10px;
+
 }
 
 .email, .phone {
     font-weight: 600;
     color: #7f7f7f;
+}
+
+.contact-section p:nth-child(3), p:nth-child(4) {
+    margin: 10px;
 }
 
 hr {
@@ -361,9 +370,6 @@ hr {
             padding-top:0;
         }
 
-        .contact-section p:nth-child(3), p:nth-child(4) {
-            margin: 10px;
-        }
 
         hr {
             margin-top: 75px;
