@@ -9,7 +9,7 @@
     background: #fafafa;
 }
 
-body {
+.site-wrapper {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -372,11 +372,7 @@ hr {
         .footer-wrapper {
             margin: 25px 0;
         }
-
-
     }
-
-
 }
 
 
